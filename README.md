@@ -1,11 +1,7 @@
 operation:
 
-	python get_data.py
-
-output:
-
-	output.json
+	python main.py
 
 url:
 
-	If you want to chnage url, change 'http://opendata.epa.gov.tw/ws/Data/RainTenMin/?$format=json' to your url.
+	If you want to chnage url, add your url in array of utl in main.py.
