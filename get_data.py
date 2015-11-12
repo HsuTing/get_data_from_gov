@@ -23,6 +23,6 @@ for i in range(1, len(sys.argv)):
       content = urllib2.urlopen(url)
       data = content.read()
       fout = open(os.path.join('output', extend + name + '.json'), 'w+')
-      fout.write(data)
+      fout.write(data.decode('utf-8').encode('utf-8'))
 
   fin.close()
