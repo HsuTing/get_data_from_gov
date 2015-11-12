@@ -6,7 +6,7 @@
 
 ## Use
 
-For Max or ubunti:
+For Max or ubuntu:
 
 ```
   python get_data.py (argument) (filename)
