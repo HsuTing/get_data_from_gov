@@ -6,10 +6,19 @@
 
 ## Use
 
+For Max or ubunti:
+
 ```
   python get_data.py (argument) (filename)
 ```
 - You can use many file if you want.
+
+For window:
+
+```
+  commond = "python get_data.py (argument) (filename)"
+```
+- You must add you command in window.py
 
 ## File example
 
