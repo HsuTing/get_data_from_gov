@@ -15,10 +15,9 @@ For Max or ubunti:
 
 For window:
 
-```
-  commond = "python get_data.py (argument) (filename)"
-```
-- You must add you command in window.py
+- Click get_data.bat
+- You must add you command in get_data.bat.
+- You can use notepad to edit get_data.bat.
 
 ## File example
 
