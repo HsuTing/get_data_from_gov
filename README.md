@@ -15,9 +15,9 @@ For Max or ubuntu:
 
 For window:
 
-- Click get_data.bat
-- You must add you command in get_data.bat.
-- You can use notepad to edit get_data.bat.
+- Click `get_data.bat`.
+- You must add you command in `get_data.bat`.
+- You can use notepad to edit `get_data.bat`.
 
 ## File example
 
