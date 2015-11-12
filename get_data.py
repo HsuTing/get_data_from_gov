@@ -1,12 +1,28 @@
 import urllib2
-import time
+import json
+import sys
+import os
 
-def get_data(url):
-	for i in range(0, len(url)):
-		temptime = time.localtime(time.time())
-		output = str(temptime.tm_year) + '_' + str(temptime.tm_mon) + '_' + str(temptime.tm_mday) + '_' + str(temptime.tm_hour) + '_' + str(temptime.tm_min) + '_' + str(temptime.tm_sec)
-		temp = 'http://opendata.epa.gov.tw/ws/Data/' + url[i] + '/?$format=json'
-		content = urllib2.urlopen(temp)
-		data = content.read()
-		fout = open(output + '_' + url[i] + '.json', 'w+')
-		fout.write(data)
+import argument
+from argument import Time
+
+extend = ""
+argu = {
+  '-t': Time()
+}
+
+for i in range(1, len(sys.argv)):
+###check argument
+  if sys.argv[i] in argu.keys(): 
+    extend = extend + argu[sys.argv[i]]
+    i = i + 1
+
+  with open(sys.argv[i]) as fin:
+    urls = json.load(fin)
+    for name, url in urls.iteritems():
+      content = urllib2.urlopen(url)
+      data = content.read()
+      fout = open(os.path.join('output', extend + name + '.json'), 'w+')
+      fout.write(data)
+
+  fin.close()

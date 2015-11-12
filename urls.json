@@ -1,0 +1,4 @@
+{
+  "RainTenMin": "http://opendata.epa.gov.tw/ws/Data/RainTenMin/?$format=json",
+  "SGWC": "http://opendata.epa.gov.tw/ws/Data/SGWC/?$format=json"
+}
