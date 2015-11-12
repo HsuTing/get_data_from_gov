@@ -7,7 +7,7 @@
 ## Use
 
 ```
-  python get_data (argument) (filename)
+  python get_data.py (argument) (filename)
 ```
 - You can use many file if you want.
 
