@@ -39,4 +39,4 @@ For window:
 
 ## Issue
 
-You can add issue (here)[https://github.com/HsuTing/get_data_from_gov/issues].
+You can add issue [here](https://github.com/HsuTing/get_data_from_gov/issues).
