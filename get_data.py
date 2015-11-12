@@ -22,7 +22,8 @@ for i in range(1, len(sys.argv)):
     for name, url in urls.iteritems():
       content = urllib2.urlopen(url)
       data = content.read()
-      fout = open(os.path.join('output', extend + name + '.json'), 'w+')
-      fout.write(data.decode('utf-8').encode('utf-8'))
+      with open(os.path.join('output', extend + name + '.json'), 'w+') as fout:
+        fout.write(data.decode('utf-8').encode('utf-8'))
+      fout.close()
 
   fin.close()
